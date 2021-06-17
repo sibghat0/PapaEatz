@@ -1,0 +1,29 @@
+.breadcrumb {
+	background-image: url("../../assets/images/brand.jpg");
+	width: 90% !important;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem auto !important;
+}
+
+.breadcrumb h1 {
+	padding: 0 !important;
+	font-size: 1.8rem !important;
+	margin: 0.5rem 0 !important;
+}
+.breadcrumb p {
+	margin: 0 !important;
+	padding: 0 !important;
+	color: #ef6f0b;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+@media (max-width: 468px) {
+	.breadcrumb h1 b {
+		font-size: 24px;
+	}
+}

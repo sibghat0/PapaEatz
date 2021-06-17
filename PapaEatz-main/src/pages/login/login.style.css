@@ -1,0 +1,98 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.login {
+	display: flex;
+	justify-content: center;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	width: 40% !important;
+}
+
+.login-form input {
+	height: 40px;
+	border: 1px solid #ef6f0b;
+	outline: none;
+	padding: 0.25rem 0.5rem;
+	font-size: 18px;
+}
+.label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.label span {
+	color: #ef6f0b;
+	font-style: italic;
+}
+
+.sign-in {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.sign-in .loader {
+	background-color: #ef6f0b;
+	border-radius: 50%;
+}
+
+.sign-in button {
+	width: 80px;
+	background-color: #ef6f0b;
+	outline: none;
+	border: 1px solid #ef6f0b;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.sign-in p a {
+	color: #ef6f0b;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.label {
+	margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+	.sign-in {
+		flex-direction: column;
+	}
+
+	.sign-in button {
+		width: 100%;
+		height: 35px;
+	}
+	.sign-in p {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 12px;
+	}
+	.login-form {
+		width: 40% !important ;
+	}
+}
+
+@media (max-width: 768px) {
+	.login-form {
+		width: 60% !important;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 468px) {
+	.login-form {
+		width: 70% !important;
+	}
+	lable {
+		font-size: 12px;
+	}
+}

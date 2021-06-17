@@ -1,0 +1,55 @@
+.sym-container {
+	width: 100%;
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.weekly-menu-container .selectmeal {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weekly-menu-container .selectmeal .smeal {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.weekly-menu-container .selectmeal .btn-cont {
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.weekly-menu-container .selectmeal .btn-cont .btn-cont2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.weekly-menu-container .selectmeal .btn-cont .btn-cont2 select {
+	height: 40px;
+	margin-right: 10px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.weekly-menu-container .selectmeal .btn-cont button {
+	border: none;
+	color: white;
+	padding: 6px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	cursor: pointer;
+	background-color: #ef6f0b;
+}
+
+.weekly-menu-container .selectmeal .btn-cont button:nth-child(2) {
+	margin: 0 0 0 auto;
+}

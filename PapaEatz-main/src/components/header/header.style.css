@@ -1,0 +1,262 @@
+.header {
+	padding: 10px 20px;
+	display: flex;
+}
+.header-center {
+	margin: 0 auto;
+	display: flex;
+	height: 60px;
+}
+.header .header-center a {
+	color: #373f41;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+	height: fit-content;
+}
+.header a:hover {
+	color: #ef6f0b;
+}
+
+.header a.active {
+	color: #ef6f0b;
+}
+.right-container {
+	display: flex;
+	align-items: center;
+}
+
+.right-container div img {
+	height: 40px;
+}
+
+.header .hamburger-icon {
+	display: none;
+}
+
+.header .cart-icon-ham {
+	display: none;
+}
+
+.cart-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.header-center .namelog {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center;
+	margin-left: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.header-center .namelog p {
+	margin: 0;
+	padding-left: 10px;
+	font-weight: 500;
+	margin-right: 7px;
+}
+.header-center .namelog .fa-chevron-down {
+	font-size: 14px;
+	transition: transform 0.3s;
+}
+
+.header-center .namelog:hover .fa-chevron-down {
+	transform: rotate(180deg);
+	transition: transform 0.3s;
+}
+
+.header-center .namelog .namelog-options {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.2rem 0;
+	position: absolute;
+	top: 57px;
+	right: -15px;
+	display: none;
+	background-color: #fff;
+	color: #ef6f0b;
+	z-index: 999;
+	border: 1px solid #e5e5e5;
+}
+
+.header-center .namelog .namelog-options::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border-left: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	transform: rotate(45deg);
+	position: absolute;
+	top: -9px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.header-center .namelog:hover .namelog-options {
+	display: flex;
+}
+
+.header-center .namelog .namelog-options .options {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 1rem;
+	z-index: 1;
+	text-decoration: none;
+	color: #ef6f0b;
+}
+.header-center .namelog .namelog-options .options p {
+	font-weight: 14px;
+}
+.header-center .namelog .namelog-options .options:hover {
+	background-color: #e5e5e5;
+	padding-left: 1.3rem;
+}
+.header-center .namelog .namelog-options .options:hover p {
+	font-size: 15px;
+}
+.header-center .namelog .namelog-options .options i {
+	width: 40px;
+}
+
+.hamburger {
+	display: none;
+	/* transform: scaleY(0); */
+}
+.header-center .signup-btn {
+	background-color: #ef6f0b;
+	border-radius: 7px;
+}
+
+.header-center .signup-btn p {
+	margin: 0;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.header {
+		align-items: center;
+		padding-right: 1.2rem;
+		position: relative;
+		justify-content: space-between;
+	}
+	.header .header-center {
+		display: none;
+	}
+	.header .right-container {
+		display: none;
+	}
+	.header .hamburger-icon {
+		display: block;
+		/* margin-left: auto; */
+	}
+	.header .cart-icon-ham {
+		display: block;
+	}
+	.header .cart-icon-ham img {
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+	}
+	.header .hamburger-icon i {
+		font-size: 18px;
+	}
+	.hamburger {
+		width: 100%;
+		padding: 1rem;
+		background-color: rgb(46, 46, 46);
+		display: block;
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 0.5s ease;
+		position: absolute;
+	}
+
+	.hamburger.active {
+		transform: scaleY(1);
+		transition: transform 0.5s ease;
+		z-index: 999;
+	}
+	.hamburger.active .header-center {
+		display: flex;
+		flex-direction: column;
+		height: 250px;
+	}
+
+	.hamburger .header-center .link {
+		border-bottom: 1px solid #fff;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0.8rem 0.5rem;
+		height: 50px;
+	}
+
+	.hamburger .header-center .link:hover {
+		color: #ef6f0b;
+	}
+
+	.hamburger .link.active {
+		color: #ef6f0b;
+		text-decoration: none;
+	}
+
+	.hamburger .right-container {
+		width: 100%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.hamburger .right-container a {
+		width: 100%;
+		height: 50px;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 0.8rem 0.5rem 0;
+	}
+	.hamburger .right-container .namelog {
+		width: 100%;
+		height: 50px;
+		border-bottom: 1px solid #fff;
+		padding: 0.8rem 0.5rem 0;
+	}
+	.hamburger .right-container {
+		color: #fff;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 0 !important;
+	}
+
+	.hamburger .right-container .signup-btn {
+		background-color: transparent;
+		border-radius: 0;
+		color: #ef6f0b;
+	}
+}

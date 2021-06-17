@@ -1,0 +1,153 @@
+.meal-plan{
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* margin: 40px auto; */
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.meal-plan .meal-plan-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-plan .meal-plan-name .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal-plan .meal-plan-name .top h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.meal-plan .meal-plan-name .top p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.meal-plan .meal-plan-name p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.meal-plan .items{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin: 15px 0;
+}
+
+/* .item:nth-child(3n)
+{
+    margin-right: 0;
+} */
+
+/* .item img{
+    width: 200px;
+    border-radius: 25px;
+} */
+
+.item h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size:16px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.item .counter {
+    display:flex;
+    
+}
+
+.cart2{
+    display: flex;
+}
+
+.buy{
+    color:white;
+    background-color: #EF6F0B;
+    border-radius: 8px;
+   padding:0 0.6rem !important;
+   height: 40px !important;
+   margin-left: 10px;
+   
+}
+
+.buy a{
+   text-decoration: none;
+   color:white;
+}
+.buy a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media (max-width:1400px){
+    .item{
+        margin:  0 1rem;
+    }
+    
+    /* .item:nth-child(3n)
+    {
+        margin-right: 0;
+    } */
+}
+
+@media (max-width:1200px){
+    .item{
+        margin:  0 0.5rem;
+    }
+
+    .meal-plan .meal-plan-name .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    /* .item:nth-child(3n)
+    {
+        margin-right: 0;
+    } */
+
+    .meal-plan .items {
+        width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media (max-width:981px){
+    .cart2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .buy {
+        width: 130px;
+    }
+}

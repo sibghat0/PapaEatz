@@ -1,0 +1,112 @@
+.food-item {
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.food-item:hover {
+	background-color: #e5e5e5;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.food-item .food-img {
+	height: 200px !important;
+	width: 200px !important;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+	object-fit: cover;
+}
+
+.food-item h2 {
+	font-size: 1.2rem;
+}
+
+.productDescription {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+}
+.productDescription .des-img {
+	width: 250px !important;
+	height: 250px;
+	width: 45%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.desc {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	padding: 0 0.5rem;
+}
+.desc span {
+	font-size: 22px !important;
+	font-weight: bold;
+}
+.productDescription .desc .foodName {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.desc .dishName {
+	font-weight: 400 !important;
+	font-size: 17px !important;
+}
+.desc p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.productDescription .SpicesImg {
+	position: absolute;
+	right: -24px;
+	top: 0px;
+	height: 160px;
+	opacity: 0.2;
+}
+
+.food-item .choose-quantity {
+	display: flex;
+	align-items: center;
+}
+
+.food-item .choose-quantity button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 0 1rem;
+	background-color: #ef6f0b;
+}
+.food-item .choose-quantity button i {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.food-item .choose-quantity p {
+	font-size: 1.5rem;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 468px) {
+	.food-item {
+		margin: 0.5rem 0;
+		padding: 0.25rem;
+		width: 165px;
+		text-align: center;
+	}
+
+	.food-item .food-img {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}

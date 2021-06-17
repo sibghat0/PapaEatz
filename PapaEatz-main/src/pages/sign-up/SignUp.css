@@ -1,0 +1,171 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.login {
+	display: flex;
+	justify-content: center;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	width: 32%;
+}
+
+.login-form input {
+	height: 40px;
+	border: 1px solid #ef6f0b;
+	outline: none;
+	padding: 0.25rem 0.5rem;
+	font-size: 18px;
+}
+.label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.label span {
+	color: #ef6f0b;
+	font-style: italic;
+}
+
+.sign-up {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.sign-up .loader {
+	background-color: #ef6f0b;
+	border-radius: 50%;
+}
+
+.sign-up button {
+	width: 80px;
+	background-color: #ef6f0b;
+	outline: none;
+	border: 1px solid #ef6f0b;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	height: 37px;
+}
+
+.sign-up p a {
+	color: #ef6f0b;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.label {
+	margin-top: 8px;
+}
+
+.otp-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	margin: 5rem;
+}
+
+.otp-cont .vrf {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.otp-cont .vrf h1 {
+	font-size: 30px;
+}
+
+.otp-cont .vrf p {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+
+.otp-cont .verification-cont {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.otp-cont .verification-cont .code-verification {
+	margin: 0.5rem 1rem;
+	width: 43px;
+	height: 40px;
+}
+
+.otp-cont .verification-cont .code-verification input {
+	width: 100% !important;
+	height: 100% !important;
+	text-align: center;
+	background-color: #f4f6f8;
+	border: none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	font-size: 25px;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.otp-cont .button-verification {
+	display: flex;
+	justify-content: space-between;
+	width: 27%;
+	height: 100%;
+}
+
+.otp-cont .button-verification button {
+	width: 80px;
+	background-color: #ef6f0b;
+	outline: none;
+	border: 1px solid #ef6f0b;
+	color: white;
+	border-radius: 10px;
+	font-weight: bold;
+	height: 37px;
+}
+
+.otp-cont .button-verification .loader {
+	background-color: #ef6f0b;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.sign-up {
+		flex-direction: column;
+	}
+
+	.sign-up button {
+		width: 100%;
+	}
+	.sign-up p {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	.login-form {
+		width: 50% !important;
+	}
+}
+@media (max-width: 680px) {
+	.login-form {
+		width: 70% !important;
+	}
+}
+
+@media (max-width: 468px) {
+	.login-form {
+		width: 87% !important;
+	}
+}

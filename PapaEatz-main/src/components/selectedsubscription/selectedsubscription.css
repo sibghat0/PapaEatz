@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.container-form {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.success {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.success p {
+	margin-top: 50px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.container-form .form-detail {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.container-form .form-detail h1 {
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 0.5rem;
+	margin-left: 1rem;
+	font-size: 20px;
+}
+
+.form-calender .select-day {
+	box-shadow: 0px 4px 20px rgba(53, 53, 53, 0.2);
+	border-radius: 15px;
+	margin-top: 1rem;
+	padding: 1rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.form-calender .select-day h1 {
+	font-size: 18px;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.form-calender .select-day p {
+	font-size: 17px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 0.25rem 0.5rem;
+	width: 250px;
+}
+
+.form-calender .select-day .startChooser {
+	position: absolute;
+	bottom: 20px;
+	padding: 1rem;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 4px 20px rgba(53, 53, 53, 0.2);
+}
+
+.form-calender .select-day input {
+	border: 2px solid #ef6f0b;
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+}
+
+.form-calender .selected-meal-day {
+	padding: 1rem;
+	margin-top: 1rem;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 4px 20px rgba(53, 53, 53, 0.2);
+}
+
+.form-calender .selected-meal-day .selected-3meal {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-calender .selected-meal-day h1 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.form-calender .days {
+	margin-left: 0.5rem;
+}
+
+.form-calender .days i {
+	margin: 0.5rem;
+}
+.form-calender .days i.fas.fa-check-square {
+	margin: 0.5rem;
+	color: #ef6f0b;
+}
+
+.form-calender .select-day .DayPickerInput input {
+	text-align: center;
+	width: 110px;
+	margin-left: 10px;
+}
+
+.container-form .form-detail .form-proceed {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 40px;
+}
+
+.container-form .form-detail .form-proceed button {
+	background-color: #ef6f0b;
+	border-radius: 10px;
+	color: #fff;
+	height: 100%;
+	padding: 0 1rem;
+	margin: 0 0.5rem;
+}
+
+.container-form .preview {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+}
+
+.container-form .preview img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 2px;
+}
+
+@media (max-width: 786px) {
+	.container-form .form-detail {
+		width: 50%;
+	}
+}
+
+@media (max-width: 550px) {
+	.container-form .form-detail {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-form {
+		flex-direction: column;
+	}
+
+	.container-form .preview {
+		width: 100%;
+	}
+}

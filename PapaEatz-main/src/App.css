@@ -1,0 +1,42 @@
+/* Loading external fonts */
+@font-face {
+	font-family: "sofia-pro";
+	src: url("./assets/static/Sofia\ Pro\ Regular.ttf");
+}
+.fontColor {
+	color: #ef6f0b;
+}
+.fontBlack {
+	color: #373f41;
+}
+.fontGrey {
+	color: #737b7d;
+}
+body {
+	font-family: "sofia-pro";
+}
+.App-logo {
+	height: 60px;
+	pointer-events: none;
+	/* padding: 8px; */
+	margin-top: -5px;
+}
+
+.App {
+	width: 100%;
+}
+
+button {
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 5px;
+	background-color: #fb641b;
+}

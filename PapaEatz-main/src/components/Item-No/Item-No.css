@@ -1,0 +1,56 @@
+.form-quantity {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	border-radius: 15px;
+	padding: 1rem;
+	box-shadow: 0px 4px 20px rgba(53, 53, 53, 0.2);
+}
+
+.form-quantity h1 {
+	font-size: 18px !important;
+	margin: 0 !important;
+	margin-bottom: 0.5rem !important;
+}
+
+.form-quantity p {
+	font-size: 17px;
+}
+
+.form-quantity .counter {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.form-quantity .counter span {
+	margin: 0 10px;
+	padding: 0.4rem 0.7rem;
+	background-color: #ef6f0b;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.form-quantity .counter span:nth-child(2) {
+	background-color: transparent;
+	font-size: 18px;
+}
+
+.form-quantity .counter span i {
+	color: #fff;
+}
+
+@media (max-width: 550px) {
+	.form-quantity {
+		width: 75%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form-quantity .counter {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,41 @@
+.about-container {
+	display: flex;
+	margin: 0 8rem;
+}
+
+.about-container img {
+	width: 450px;
+	object-fit: contain;
+}
+
+.about-container .content {
+	margin-top: 10rem;
+}
+
+.about-container p {
+	font-size: 1.2rem;
+}
+
+@media (max-width: 468px) {
+	.about-container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.about-container img {
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.about-container .content {
+		margin-top: -5rem;
+	}
+
+	.about-container h1 {
+		font-size: 1.5rem;
+	}
+}

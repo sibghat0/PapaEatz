@@ -1,0 +1,96 @@
+.dailyOrder-container {
+	width: 100%;
+	padding: 1rem;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	margin: 0.5rem 0;
+	position: relative;
+}
+
+.dailyOrder-container .varient {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 1rem;
+	background-color: #fb641b;
+	width: 100px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.dailyOrder-container .dailyorder-date {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0.5rem 0;
+}
+
+.dailyOrder-container .dailyorder-date h1 {
+	margin: 0;
+}
+
+.dailyOrder-container .dailyorder-date p {
+	margin: 0 0.5rem;
+}
+
+.dailyOrder-container .dailyorder-items {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0.5rem 0;
+}
+
+.dailyOrder-container .dailyorder-items h1 {
+	margin-right: 10px;
+}
+
+.dailyOrder-container .dailyorder-items .item-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dailyOrder-container .dailyorder-items .item-list p {
+	margin: 0 0.5rem;
+}
+
+@media (max-width: 468px) {
+	.dailyOrder-container {
+		padding: 0.5rem;
+	}
+	.dailyOrder-container .dailyorder-date h1 {
+		font-size: 14px;
+	}
+
+	.dailyOrder-container .dailyorder-date p {
+		font-size: 12px;
+	}
+
+	.dailyOrder-container .varient {
+		position: relative;
+		margin: 0;
+		width: 100%;
+	}
+
+	.dailyOrder-container .dailyorder-items {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.dailyOrder-container .dailyorder-items h1 {
+		font-size: 14px;
+	}
+
+	.dailyOrder-container .dailyorder-items p {
+		font-size: 12px;
+	}
+}

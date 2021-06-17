@@ -1,0 +1,79 @@
+.subscriptionCard-container {
+	width: 95%;
+	padding: 1rem;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	margin: 0.5rem 0;
+}
+
+.subscriptionCard-container h1 {
+	font-size: 1rem;
+}
+
+.subscriptionCard-container h1 span {
+	color: #414141;
+	font-size: 1rem;
+}
+
+.subscriptionCard-container .button-group {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.subscriptionCard-container .button-group .change-button {
+	background-color: #fb641b;
+	padding: 0 1rem;
+	height: 40px;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.subscriptionCard-container .button-group .pause-resume-button {
+	background-color: #4ea048;
+	padding: 0 1rem;
+	height: 40px;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.subscriptionCard-container .button-group .canc-button {
+	background-color: #de3200;
+	padding: 0 1rem;
+	height: 40px;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.subscriptionCard-container .spacer {
+	margin: 0 1rem;
+}
+
+.info-alert {
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e5e5e5;
+	padding: 0.25rem 0;
+	border-radius: 10px;
+}
+
+.info-alert i {
+	margin-right: 5px;
+}
+
+.cost {
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+}
+.cost span {
+	font-weight: bold;
+	margin-left: 0.5rem;
+}
